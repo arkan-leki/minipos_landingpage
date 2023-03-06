@@ -36,9 +36,10 @@ export const Hero = () => {
 
   return (
     <>
-      <div style={{ backgroundColor: '#ddd', height: 5, marginTop: 10 }}>
+      {progress && <div className='w-full text-white text-lg text-center bg-white' style={{height: 5, marginTop: 10 }}>
         <div style={{ backgroundColor: '#0066cc', height: 5, width: `${progress}%` }}></div>
-      </div>
+        <p>{progress}</p>
+      </div>}
       <section className="py-20 bg-gradient-to-r from-sky-500 to-indigo-600 text-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-between items-center">
