@@ -39,7 +39,7 @@ export const Hero = () => {
 
   return (
     <>
-      {progress != 0 && <div className='w-full text-white text-lg text-center bg-white' style={{height: 5, marginTop: 10 }}>
+      {progress !== 0 && <div className='w-full text-white text-lg text-center bg-white' style={{height: 5, marginTop: 10 }}>
         <div style={{ backgroundColor: '#0066cc', height: 5, width: `${progress}%` }}></div>
         <p>{progress}</p>
       </div>}
