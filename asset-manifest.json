@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/minipos_landingpage/static/css/main.b07e45f7.css",
+    "main.js": "/minipos_landingpage/static/js/main.573a424d.js",
+    "static/js/787.d89b40a3.chunk.js": "/minipos_landingpage/static/js/787.d89b40a3.chunk.js",
+    "index.html": "/minipos_landingpage/index.html",
+    "main.b07e45f7.css.map": "/minipos_landingpage/static/css/main.b07e45f7.css.map",
+    "main.573a424d.js.map": "/minipos_landingpage/static/js/main.573a424d.js.map",
+    "787.d89b40a3.chunk.js.map": "/minipos_landingpage/static/js/787.d89b40a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b07e45f7.css",
+    "static/js/main.573a424d.js"
+  ]
+}
