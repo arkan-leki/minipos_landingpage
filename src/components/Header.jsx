@@ -4,7 +4,9 @@ export const Header = () => {
   return (
     <header className="bg-indigo-600 text-white py-6" >
       <div className="container mx-auto px-4">
-        <h1 className="text-3xl font-bold" dir='ltr'>MINIPOS APP</h1>
+       
+        <h1 className="text-4xl font-bold flex-row flex items-center" dir='ltr'>
+        <img src="hero.png" alt="fav"  className='w-10' />MINIPOS APP</h1>
         <nav className="mt-6">
           <ul className="flex flex-row gap-4">
             <li>
