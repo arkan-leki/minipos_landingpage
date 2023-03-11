@@ -5,7 +5,7 @@ export const Hero = () => {
 
 
   const downloadFile = () => {
-    const url = 'https://uc7be2445048c30058950ab418f0.dl.dropboxusercontent.com/cd/0/get/B4DZw73ofQAK-W40dEnnB51EbcxRA_O5yK-fEhcbdyOjSrBktgrJYC0hK-02LNEwe3lvUrPwEa-kuWPXBfh5hHNKcLDU101b0qIW523aD6EAxNyfL1XZ5wQlnoV9EwK9zeYl0WV-h7oRJ4pSXVuLbZ-UDMKnSCyl0-STAES4zMgrwMr1RlBLttSm6X1BA-fFvrQ/file?_download_id=7110466587337152810952099916811697547608620760736728441240809073&_notify_domain=www.dropbox.com&dl=1';
+    const url = 'https://tg-bots.fra.s3.noyes.in/AgADxCsAAi1qYUg.apk?response-content-disposition=attachment%3B%20filename%3D%22minipos.apk%22&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=eBIVc5ikOExcpttNpGJV%2F20230311%2FFRA%2Fs3%2Faws4_request&X-Amz-Date=20230311T163814Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Signature=32e8a7c280485035cdda3475ef11658195a7f937f119c2a334beb3f95572fd1b'
     const filename = 'minipos.apk';
 
     const xhr = new XMLHttpRequest();
