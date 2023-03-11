@@ -5,7 +5,7 @@ export const Hero = () => {
 
 
   const downloadFile = () => {
-    const url = '/app-release.apk';
+    const url = 'https://uc7be2445048c30058950ab418f0.dl.dropboxusercontent.com/cd/0/get/B4DZw73ofQAK-W40dEnnB51EbcxRA_O5yK-fEhcbdyOjSrBktgrJYC0hK-02LNEwe3lvUrPwEa-kuWPXBfh5hHNKcLDU101b0qIW523aD6EAxNyfL1XZ5wQlnoV9EwK9zeYl0WV-h7oRJ4pSXVuLbZ-UDMKnSCyl0-STAES4zMgrwMr1RlBLttSm6X1BA-fFvrQ/file?_download_id=7110466587337152810952099916811697547608620760736728441240809073&_notify_domain=www.dropbox.com&dl=1';
     const filename = 'minipos.apk';
 
     const xhr = new XMLHttpRequest();
