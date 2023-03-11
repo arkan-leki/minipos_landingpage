@@ -5,7 +5,7 @@ export const Hero = () => {
 
 
   const downloadFile = () => {
-    const url = 'https://tg-bots.fra.s3.noyes.in/AgADxCsAAi1qYUg.apk?response-content-disposition=attachment%3B%20filename%3D%22minipos.apk%22&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=eBIVc5ikOExcpttNpGJV%2F20230311%2FFRA%2Fs3%2Faws4_request&X-Amz-Date=20230311T163814Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Signature=32e8a7c280485035cdda3475ef11658195a7f937f119c2a334beb3f95572fd1b'
+    const url = './minipos.apk'
     const filename = 'minipos.apk';
 
     const xhr = new XMLHttpRequest();
