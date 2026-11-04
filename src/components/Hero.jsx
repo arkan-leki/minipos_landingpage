@@ -62,7 +62,7 @@ export const Hero = () => {
             <div className="w-full md:w-1/2 mt-12 md:mt-0">
               <img
                 className="mx-auto"
-                src="/handheld.png"
+                src="./handheld.png"
                 alt="Mobile App"
               />
             </div>

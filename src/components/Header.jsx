@@ -6,7 +6,7 @@ export const Header = () => {
       <div className="container mx-auto px-4">
        
         <h1 className="text-4xl font-bold flex-row flex items-center" dir='ltr'>
-        <img src="hero.png" alt="fav"  className='w-10' />MINIPOS APP</h1>
+        <img src="./hero.png" alt="fav"  className='w-10' />MINIPOS APP</h1>
         <nav className="mt-6">
           <ul className="flex flex-row gap-4">
             <li>
@@ -31,6 +31,14 @@ export const Header = () => {
                 href="#contact"
               >
                 پەیوەندیبکە
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:text-gray-200 transition-colors duration-300"
+                href="./privacy-policy.html"
+              >
+                سیاسەتی تایبەتێتی
               </a>
             </li>
           </ul>
