@@ -48,7 +48,7 @@ export const PRODUCTS = [
       "ڕاپۆرت، خەرجی و کڕیاران",
       "ناوی دوکانەکەت لەسەر پسوولە",
     ],
-    screens: ["01-pos", "02-menu-drawer", "03-about"].map(
+    screens: ["00-tablet", "01-pos", "02-menu-drawer", "03-about"].map(
       (name) => `./screens/kapitan/${name}.jpg`
     ),
     playLive: false,

@@ -8,8 +8,7 @@ const Gallery = ({ name, screens }) => (
         key={src}
         src={src}
         alt={`شاشەیەکی ${name}`}
-        loading="lazy"
-        className="snap-start shrink-0 w-36 sm:w-44 rounded-2xl border border-ink-900/10"
+        className="snap-start shrink-0 h-72 sm:h-96 w-auto rounded-2xl border border-ink-900/10"
       />
     ))}
   </div>
