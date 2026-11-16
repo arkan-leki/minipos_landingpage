@@ -16,7 +16,7 @@ const Gallery = ({ name, screens }) => (
 )
 
 const ProductCard = ({ product }) => (
-  <article className="bg-white rounded-[20px] border border-ink-900/10 p-5 sm:p-8">
+  <article className="min-w-0 bg-white rounded-[20px] border border-ink-900/10 p-5 sm:p-8">
     <div className="flex items-center gap-4 mb-5">
       <img src={product.icon} alt="" className="w-16 h-16 rounded-2xl" />
       <div>
@@ -82,7 +82,7 @@ export const Products = () => (
   <>
     <section id="products" className="max-w-6xl mx-auto px-4 py-12 scroll-mt-16">
       <h2 className="font-kufi font-bold text-2xl sm:text-3xl text-ink-900 mb-8">بەرهەمەکان</h2>
-      <div className="grid gap-6">
+      <div className="grid grid-cols-1 gap-6">
         {PRODUCTS.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
@@ -93,7 +93,7 @@ export const Products = () => (
       <p className="text-ink-700 mb-6 leading-7">
         فایلەکە دابەزێنە و بیکەرەوە. ئەگەر مۆبایلەکەت پرسیاری کرد، ڕێگە بە دامەزراندن لەم سەرچاوەیە بدە.
       </p>
-      <div className="grid gap-4">
+      <div className="grid grid-cols-1 gap-4">
         {PRODUCTS.map((product) => (
           <DownloadRow key={product.id} product={product} />
         ))}
