@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# APKs are attached to GitHub Releases, never committed
+*.apk

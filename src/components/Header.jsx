@@ -1,49 +1,24 @@
 import React from 'react'
 
-export const Header = () => {
-  return (
-    <header className="bg-indigo-600 text-white py-6" >
-      <div className="container mx-auto px-4">
-       
-        <h1 className="text-4xl font-bold flex-row flex items-center" dir='ltr'>
-        <img src="./hero.png" alt="fav"  className='w-10' />MINIPOS APP</h1>
-        <nav className="mt-6">
-          <ul className="flex flex-row gap-4">
-            <li>
-              <a
-                className="hover:text-gray-200 transition-colors duration-300"
-                href="#features"
-              >
-                تایبەتمەندی
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:text-gray-200 transition-colors duration-300"
-                href="#pricing"
-              >
-                نرخ
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:text-gray-200 transition-colors duration-300"
-                href="#contact"
-              >
-                پەیوەندیبکە
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:text-gray-200 transition-colors duration-300"
-                href="./privacy-policy.html"
-              >
-                سیاسەتی تایبەتێتی
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-  )
-}
+const NAV = [
+  { href: '#products', label: 'بەرهەمەکان' },
+  { href: '#download', label: 'دابەزاندن' },
+  { href: '#contact', label: 'پەیوەندی' },
+]
+
+export const Header = () => (
+  <header className="sticky top-0 z-10 bg-paper-50/95 backdrop-blur border-b border-ink-900/10">
+    <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+      <a href="#top" aria-label="کیسرا تێک">
+        <img src="./kisra-lockup-ku.svg" alt="کیسرا تێک" className="h-8 w-auto" />
+      </a>
+      <nav className="flex gap-4 sm:gap-6 text-sm sm:text-base font-semibold text-ink-700">
+        {NAV.map(({ href, label }) => (
+          <a key={href} href={href} className="hover:text-gold-700 transition-colors duration-150">
+            {label}
+          </a>
+        ))}
+      </nav>
+    </div>
+  </header>
+)

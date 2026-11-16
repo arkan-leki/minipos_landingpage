@@ -1,75 +1,38 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { CONTACT } from '../site'
 
-export const Hero = () => {
-  const [progress, setProgress] = useState(0);
-
-
-  const downloadFile = () => {
-    const url = './minipos.apk'
-    const filename = 'minipos.apk';
-
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.responseType = 'blob';
-
-    xhr.onprogress = (event) => {
-      const { loaded, total } = event;
-      const progress = Math.floor((loaded / total) * 100);
-      console.log(`Download progress: ${progress}%`);
-      setProgress(progress);
-    };
-
-
-    xhr.onload = () => {
-      if (xhr.status === 200) {
-        const blob = xhr.response;
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = filename;
-        a.click();
-        setProgress(0);
-      }
-    };
-
-    xhr.send();
-
-  };
-
-
-  return (
-    <>
-      {progress !== 0 && <div className='w-full text-white text-lg text-center bg-white' style={{height: 5, marginTop: 10 }}>
-        <div style={{ backgroundColor: '#0066cc', height: 5, width: `${progress}%` }}></div>
-        <p>{progress}</p>
-      </div>}
-      <section className="py-20 bg-gradient-to-r from-sky-500 to-indigo-600 text-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-between items-center">
-            <div className="w-full md:w-1/2">
-              <h2 className="text-4xl font-bold mb-4">
-                باشتین ئەپلیکەشن بۆ کارەکەت لێرەیە
-              </h2>
-              <p className="text-lg mb-8">
-                گونجاوترین ئەپلیکەشین بۆ بزنسە بچووکەکان
-                پێکدێت لە بەشەکانی فرۆش و کرین   و پسولەکان و ئاماری رۆژانەو مانگانە
-              </p>
-              <button className="bg-white text-indigo-600 py-2 px-6 rounded-full font-bold hover:bg-indigo-100 transition-colors duration-300"
-                onClick={downloadFile}>
-                ئیستا دایبگرە
-              </button>
-            </div>
-            <div className="w-full md:w-1/2 mt-12 md:mt-0">
-              <img
-                className="mx-auto"
-                src="./handheld.png"
-                alt="Mobile App"
-              />
-            </div>
-          </div>
+export const Hero = () => (
+  <section id="top" className="max-w-6xl mx-auto px-4 pt-14 pb-12 sm:pt-20 sm:pb-16">
+    <div className="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p className="text-gold-700 font-semibold mb-3">کیسرا تێک — سیستەمەکانی فرۆشتن</p>
+        <h1 className="font-kufi font-bold text-3xl sm:text-5xl leading-[1.5] text-ink-900 mb-5">
+          سیستەمی فرۆشتن بۆ دوکانەکەت، بەبێ ئینتەرنێت
+        </h1>
+        <p className="text-lg leading-8 text-ink-700 mb-8">
+          ئەپی خۆماڵی بۆ مارکێت و دوکان: پسوولە چاپ دەکات، کۆگا و قەرز دەژمێرێت، بە کوردی کار دەکات.
+          بەخۆڕاییە.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <a
+            href="#download"
+            className="bg-gold-500 hover:bg-gold-600 text-ink-900 font-bold py-3 px-6 rounded-xl transition-colors duration-150"
+          >
+            دابەزاندنی بەخۆڕایی
+          </a>
+          <a
+            href={CONTACT.whatsapp}
+            className="border border-ink-900/20 hover:border-ink-900/40 text-ink-900 font-semibold py-3 px-6 rounded-xl transition-colors duration-150"
+          >
+            واتسئاپ <span className="font-latin" dir="ltr">{CONTACT.phone}</span>
+          </a>
         </div>
-      </section>
-    </>
-
-  )
-}
+      </div>
+      <img
+        src="./handheld.png"
+        alt="MiniPOS لەسەر ئامێری فرۆشتن، پسوولە چاپ دەکات"
+        className="mx-auto w-64 sm:w-80 h-auto"
+      />
+    </div>
+  </section>
+)
