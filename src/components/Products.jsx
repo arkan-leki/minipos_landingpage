@@ -69,9 +69,11 @@ const DownloadRow = ({ product }) => (
           دابەزاندنی <span className="font-latin">APK</span>
         </a>
       </div>
-      <a href={product.downloadAll} className="text-sm text-teal-600 hover:underline">
-        مۆبایلی کۆن؟ وەشانی گشتی دابەزێنە
-      </a>
+      {product.downloadAll && (
+        <a href={product.downloadAll} className="text-sm text-teal-600 hover:underline">
+          مۆبایلی کۆن؟ وەشانی گشتی دابەزێنە
+        </a>
+      )}
     </div>
   </div>
 )

@@ -33,4 +33,27 @@ export const PRODUCTS = [
     downloadAll: `${RELEASES}/minipos-v4.0.1/minipos-4.0.1-universal.apk`,
     sizeMb: 50,
   },
+  {
+    id: "kapitan",
+    name: "Kapitan POS",
+    version: "1.0.6",
+    icon: "./kapitan-icon.png",
+    audience: "بۆ خواردنی خێرا و کافێ",
+    summary:
+      "مینیو، داواکاری لەشوێن و گەیاندن و قەرز، پسوولە و ڕاپۆرت. بەبێ ئینتەرنێت کار دەکات.",
+    features: [
+      "مینیو بە پۆل",
+      "داواکاری لەشوێن، گەیاندن و قەرز",
+      "پسوولە بە پرینتەری بلوتوس",
+      "ڕاپۆرت، خەرجی و کڕیاران",
+      "ناوی دوکانەکەت لەسەر پسوولە",
+    ],
+    screens: ["01-pos", "02-menu-drawer", "03-about"].map(
+      (name) => `./screens/kapitan/${name}.jpg`
+    ),
+    playLive: false,
+    download: `${RELEASES}/kapitan-v1.0.6/kapitan-pos-1.0.6.apk`,
+    downloadAll: null,
+    sizeMb: 63,
+  },
 ];
